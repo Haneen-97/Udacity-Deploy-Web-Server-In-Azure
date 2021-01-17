@@ -17,7 +17,9 @@ For this project, you will write a Packer template and a Terraform template to d
 4. Install [Terraform](https://www.terraform.io/downloads.html)
 
 ### Instructions
-**Your words here**
+- Create Tagging Security Policy using template using the command below
+  - `az policy definition create --name tagging-policy --mode indexed --rules taggingpolicy.json`
+![tagging-policy](https://user-images.githubusercontent.com/43758373/104855342-4024a880-591d-11eb-9d4e-e68183689716.PNG)
 
 ### Output
 **Your words here**
