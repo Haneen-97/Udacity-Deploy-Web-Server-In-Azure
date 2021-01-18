@@ -29,16 +29,13 @@ For this project, you will write a Packer template and a Terraform template to d
  ![assignment-list](https://user-images.githubusercontent.com/43758373/104916985-da2f3400-59a3-11eb-81dd-4797c273aaa7.PNG)
 
 
-- To build the packer image you must output your azure credentials:
-  -Create Azure credentials:
-  `az ad sp create-for-rbac --query "{ client_id: appId, client_secret: password, tenant_id: tenant }"`
-  An example of the output from the preceding commands is as follows:
+- To build the packer image you must output your azure credentials:<br>
+    - Create Azure credentials:<br>
+  `az ad sp create-for-rbac --query "{ client_id: appId, client_secret: password, tenant_id: tenant }"`<br>
+  An example of the output from the preceding commands is as follows:<br>
 
-`{
-    "client_id": "f5b6a5cf-fbdf-4a9f-b3b8-3c2cd00225a4",
-    "client_secret": "0e760437-bf34-4aad-9f8d-870be799c55d",
-    "tenant_id": "72f988bf-86f1-41af-91ab-2d7cd011db47"
-}`
+![xx](https://user-images.githubusercontent.com/43758373/104918378-b66ced80-59a5-11eb-9b61-0cafeb32bb8d.PNG)
+
 
 *For more detials please visit [How to use Packer to create Linux virtual machine images in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/build-image-with-packer) 
 
