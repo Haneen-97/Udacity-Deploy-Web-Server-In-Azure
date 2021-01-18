@@ -26,7 +26,7 @@ For this project, you will write a Packer template and a Terraform template to d
 ![tagging-policy](https://user-images.githubusercontent.com/43758373/104855342-4024a880-591d-11eb-9d4e-e68183689716.PNG)
 
 - Run the following command to see assigned polices:
-  `az policy assignment list`
+  `az policy assignment list`<br>
  ![assignment-list](https://user-images.githubusercontent.com/43758373/104916985-da2f3400-59a3-11eb-81dd-4797c273aaa7.PNG)
 
 
