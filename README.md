@@ -51,6 +51,7 @@ For this project, you will write a Packer template and a Terraform template to d
     - `terraform plan -out solution.plan`
         An example of the output:
         ![terraform-plan](https://user-images.githubusercontent.com/43758373/104913158-4313ad80-599e-11eb-8634-c358c879ac60.PNG)
+  
   3. apply plan
     - `terraform apply`
         An example of the output:
