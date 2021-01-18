@@ -23,6 +23,11 @@ For this project, you will write a Packer template and a Terraform template to d
   - `az policy definition create --name tagging-policy --mode indexed --rules tagging-policy.json`
 ![tagging-policy](https://user-images.githubusercontent.com/43758373/104855342-4024a880-591d-11eb-9d4e-e68183689716.PNG)
 
+- Run the following command to see assigned polices:
+  `az policy assignment list`
+ ![assignment-list](https://user-images.githubusercontent.com/43758373/104916985-da2f3400-59a3-11eb-81dd-4797c273aaa7.PNG)
+
+
 - To build the packer image you must output your azure credentials:
   -Create Azure credentials:
   `az ad sp create-for-rbac --query "{ client_id: appId, client_secret: password, tenant_id: tenant }"`
@@ -50,7 +55,7 @@ For this project, you will write a Packer template and a Terraform template to d
   2. create plan
     - `terraform plan -out solution.plan`
         An example of the output:
-        ![terraform-plan](https://user-images.githubusercontent.com/43758373/104913158-4313ad80-599e-11eb-8634-c358c879ac60.PNG)
+        ![terraform-plan](https://user-images.githubusercontent.com/43758373/104913980-7a368e80-599f-11eb-8051-8f2308d13113.PNG)
   
   3. apply plan
     - `terraform apply`
