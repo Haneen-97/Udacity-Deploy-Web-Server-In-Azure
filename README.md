@@ -17,6 +17,7 @@ For this project, you will write a Packer template and a Terraform template to d
 4. Install [Terraform](https://www.terraform.io/downloads.html)
 
 ### Instructions
+- Please make sure to change variables in `variables.tf` to your preferences as well as packer template `server.json` change "managed_image_resource_group_name" to your existing resource group.
 - Open azure cli and login to your account
   `az login`
   
@@ -57,12 +58,12 @@ For this project, you will write a Packer template and a Terraform template to d
   
   3. apply plan
     - `terraform apply`<br/>
-        An example of the output:
+        A sample of the output:
 ```
 
 # azurerm_availability_set.main:
 + resource "azurerm_availability_set" "main" {
-    + id                           = "xxx"
+    + id                           = "(known after apply)"
     + location                     = "uksouth"
     + managed                      = true
     + name                         = "udacity-azure-aset"
@@ -74,6 +75,10 @@ For this project, you will write a Packer template and a Terraform template to d
     }
 }
 ```
+
+screenshot:
+![terraform-apply](https://user-images.githubusercontent.com/43758373/104944104-c269a700-59c7-11eb-9f66-3a49628f1272.PNG)
+
 
 ### Output
 After apply command, if it is success it means that all resources are deployed in the azure server. 
