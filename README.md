@@ -42,23 +42,23 @@ For this project, you will write a Packer template and a Terraform template to d
 *For more detials please visit [How to use Packer to create Linux virtual machine images in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/build-image-with-packer) 
 
 - Deploy the server image
-  - `packer build server.json`
+  - `packer build server.json`<br/>
     An example of the output:
     ![packer-build](https://user-images.githubusercontent.com/43758373/104904477-4012c000-5992-11eb-9dcc-ffbc90f332f9.PNG)
 
 - Deploy resources to Azure using `main.tf`
   1. terraform initialization:
-    - `terraform init`
+    - `terraform init`<br/>
         An example of the output:
         ![terraform-init](https://user-images.githubusercontent.com/43758373/104913157-4313ad80-599e-11eb-98f6-c881b389f942.PNG)
 
   2. create plan
-    - `terraform plan -out solution.plan`
+    - `terraform plan -out solution.plan`<br/>
         An example of the output:
         ![terraform-plan](https://user-images.githubusercontent.com/43758373/104913980-7a368e80-599f-11eb-8051-8f2308d13113.PNG)
   
   3. apply plan
-    - `terraform apply`
+    - `terraform apply`<br/>
         An example of the output:
         ![terraform-apply](https://user-images.githubusercontent.com/43758373/104913159-43ac4400-599e-11eb-9b15-5a7caa929677.PNG)
 
@@ -67,10 +67,10 @@ For this project, you will write a Packer template and a Terraform template to d
 ### Output
 After apply command, if it is success it means that all resources are deployed in the azure server. 
 
-run the following command:
-`terraform show`
+run the following command:<br/>
+```terraform show```
 
-An example of the output:
+An example of the output:<br/>
 ![terraform-show](https://user-images.githubusercontent.com/43758373/104913154-41e28080-599e-11eb-9ef9-ea0f230721ca.PNG)
 
 To make sure that the resources are deployed, you can go to azure portal and view all resources page. As shown below:
