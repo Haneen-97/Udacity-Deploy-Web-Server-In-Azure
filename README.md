@@ -18,9 +18,10 @@ For this project, you will write a Packer template and a Terraform template to d
 
 ### Instructions
 - Open azure cli and login to your account
-  - `az login`
-- Create Tagging Security Policy using template using the command below
-  - `az policy definition create --name tagging-policy --mode indexed --rules tagging-policy.json`
+  `az login`
+  
+- Create Tagging Security Policy using template using the command below<br>
+  - `az policy definition create --name tagging-policy --mode indexed --rules tagging-policy.json`<br>
 ![tagging-policy](https://user-images.githubusercontent.com/43758373/104855342-4024a880-591d-11eb-9d4e-e68183689716.PNG)
 
 - Run the following command to see assigned polices:
@@ -60,8 +61,7 @@ For this project, you will write a Packer template and a Terraform template to d
   3. apply plan
     - `terraform apply`<br/>
         An example of the output:
-        ![terraform-apply](https://user-images.githubusercontent.com/43758373/104913159-43ac4400-599e-11eb-9b15-5a7caa929677.PNG)
-
+![terraform-apply](https://user-images.githubusercontent.com/43758373/104918146-63933600-59a5-11eb-8e2b-cd7842a7b8e7.PNG)
 
 
 ### Output
