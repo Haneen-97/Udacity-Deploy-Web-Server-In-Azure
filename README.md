@@ -34,10 +34,10 @@ For this project, you will write a Packer template and a Terraform template to d
   `az ad sp create-for-rbac --query "{ client_id: appId, client_secret: password, tenant_id: tenant }"`<br>
   An example of the output from the preceding commands is as follows:<br>
 
-![xx](https://user-images.githubusercontent.com/43758373/104918378-b66ced80-59a5-11eb-9b61-0cafeb32bb8d.PNG)
+  ![xx](https://user-images.githubusercontent.com/43758373/104918378-b66ced80-59a5-11eb-9b61-0cafeb32bb8d.PNG)
 
 
-*For more detials please visit [How to use Packer to create Linux virtual machine images in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/build-image-with-packer) 
+*For more detials please visit [How to use Packer to create Linux virtual machine images in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/build-image-with-packer)*
 
 - Deploy the server image
   - `packer build server.json`<br/>
